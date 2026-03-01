@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>图片随机筛选应用</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>图片随机筛选应用</h1>
+      <p class="desc">从示例图库中随机筛选并展示图片，支持按数量筛选。</p>
+
+      <section class="controls">
+        <label for="count">筛选数量：</label>
+        <input id="count" type="number" min="1" max="12" value="4" />
+        <button id="pickBtn">开始随机筛选</button>
+      </section>
+
+      <p id="status" class="status">当前共有 12 张候选图片。</p>
+
+      <section id="gallery" class="gallery" aria-live="polite"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
